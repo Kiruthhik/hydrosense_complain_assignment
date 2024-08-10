@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "complaint_assignment/wsgi.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "complaint_assignment/wsgi.py" }
+    ]
+  }
+  
